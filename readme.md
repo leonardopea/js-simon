@@ -3,8 +3,8 @@ problema:
 
  soluzione:
 
- 1- generare 5 numeri casuali cliccando un bottone e stamparli in pagina
- 2- creare un timer in sincro con il bottone di 30 secondi 
+ 1- generare 5 numeri casuali  e stamparli in pagina
+ 2- creare un timer di  30 secondi 
  3- cancellare i numeri 
  4- far apparire un promprt "inserisci i 5 numeri memorizzati"
  5- dare una risposta sulla quantità dei nuemri indovinati
