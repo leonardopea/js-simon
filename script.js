@@ -64,3 +64,26 @@ for(let i=0; i<5; i++){
 }
 
 document.getElementById('numeri_casuali').innerHTML = Numeri;   //STAMPO
+
+
+
+// TEMPO DI 3 SECONDI 
+setTimeout(function(){
+    document.getElementById('numeri_casuali').innerHTML = '';
+    
+
+},3000);
+
+setTimeout(function(){
+    let inserimento = prompt('inserisci i numeri che ti ricordi');
+    let numeri_utente = [] ;
+    numeri_utente.push(inserimento);
+    document.getElementById('inserimento').innerHTML = numeri_utente;
+
+
+},3100);
+
+
+  //L'UTENTE INSERISCE QUI DENTRO I NUMERI CHE SI RICORDA
+
+
