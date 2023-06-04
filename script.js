@@ -74,16 +74,36 @@ setTimeout(function(){
 
 },3000);
 
-setTimeout(function(){
-    let inserimento = prompt('inserisci i numeri che ti ricordi');
-    let numeri_utente = [] ;
-    numeri_utente.push(inserimento);
-    document.getElementById('inserimento').innerHTML = numeri_utente;
 
+// FUNZIONE PER INSERIRE NUMERI ALL'UTENTE 
+
+function numeri_utente(){
+
+    let utente_numeri=[];
+
+    while(utente_numeri.length < 5){
+        let inserimento = parseInt(prompt('inserisci i numeri che ti ricordi'));
+
+        if(!utente_numeri.includes(inserimento)){
+            utente_numeri.push(inserimento);
+        }
+    }
+    return utente_numeri;
+}
+
+
+setTimeout(function(){
+
+   let utente_numeri = numeri_utente();
+   let punteggio =0;
+   let numeri_indovinati=[];
+
+   for(let i=0; i<utente_numeri.length; i++){
+        if(Numeri.includes(utente_numeri[i])){
+            numeri_indovinati.push(utente_numeri[i]);
+            punteggio++;
+    }
+   }
+   document.getElementById('finale').innerHTML= `Hai indovinato ${punteggio} numeri.`
 
 },3100);
-
-
-  //L'UTENTE INSERISCE QUI DENTRO I NUMERI CHE SI RICORDA
-
-
